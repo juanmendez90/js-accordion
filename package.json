@@ -1,0 +1,22 @@
+{
+  "name": "js-accordion",
+  "version": "1.0.0",
+  "description": "Accordion built with VanillaJS and Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmendez90/js-accordion.git"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Juan Diego Mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanmendez90/js-accordion/issues"
+  },
+  "homepage": "https://github.com/juanmendez90/js-accordion#readme"
+}
