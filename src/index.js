@@ -4,5 +4,5 @@ import 'normalize.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
-  root.innerHTML = Home();
+  root.appendChild(Home());
 });

@@ -1,0 +1,15 @@
+.AccordionItem-title {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1em;
+  text-transform: uppercase;
+  background-color: #eee;
+  &:hover, &--active {
+    background-color: #d9d9d9;
+  }
+}
+
+.AccordionItem-title2 {
+  background-color: green;
+
+}

@@ -1,16 +1,21 @@
 import AccordionItem from '../AccordionItem'
+import { addStyles } from '../../utilities/helpers';
 import styles from './styles.module.scss';
 
-const renderItems = (items) => {
-  let transformedItems = '';
-  let { title, content } = {};
-  for( let i = 0; i < items.length; i += 1) {
-    ({ title, content } = items[i]);
-    transformedItems += AccordionItem({ title, content });
-  }
-  return transformedItems;
-}
+const renderItems = ({ title, content }) => AccordionItem({ title, content });
 
-const Accordion = ({ items }) => `<dl class="${styles.Accordion}">${renderItems(items)}<dl>`
+const Accordion = ({ items }) => {
+  const container = document.createElement('dl');
+  addStyles(container, styles.Accordion)
+  let elements = [];
+  for (let i = 0; i < items.length; i += 1) {
+    elements = renderItems(items[i]);
+    for( let j = 0; j < elements.length; j += 1) {
+      container.appendChild(elements[j]);
+    }
+  }
+
+  return container;
+}
 
 export default Accordion;
