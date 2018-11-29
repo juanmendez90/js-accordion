@@ -48,8 +48,8 @@ module.exports = {
           }
         }, {
           loader: 'sass-loader'
-        }]
-      },
+        }
+      ]},
       {
         test: sassModuleRegex,
         use: [{
