@@ -27,7 +27,7 @@ The solution must use the following markup
 </dl>
 ```
 
-### Also
+### Technical requirements
 
 * Use Sass for generate CSS
 * Use ES6
