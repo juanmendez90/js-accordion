@@ -32,6 +32,10 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+      },
+      {
         test: sassRegex,
         exclude: sassModuleRegex,
         use: [{

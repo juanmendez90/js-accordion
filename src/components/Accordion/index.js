@@ -11,6 +11,6 @@ const renderItems = (items) => {
   return transformedItems;
 }
 
-const Accordion = ({ items }) => `<dl class="${styles.test}">${renderItems(items)}<dl>`
+const Accordion = ({ items }) => `<dl class="${styles.Accordion}">${renderItems(items)}<dl>`
 
 export default Accordion;
