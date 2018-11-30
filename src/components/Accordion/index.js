@@ -1,5 +1,5 @@
 import AccordionItem from "../AccordionItem";
-import { addStyles } from "../../utilities/helpers";
+import { addStyles, appendToParent } from "../../utilities/helpers";
 import styles from "./styles.module.scss";
 
 const renderItems = ({ title, content }) => AccordionItem({ title, content });
@@ -10,12 +10,10 @@ const Accordion = ({ items }) => {
   let elements = [];
   for (let i = 0; i < items.length; i += 1) {
     elements = renderItems(items[i]);
-    for (let j = 0; j < elements.length; j += 1) {
-      container.appendChild(elements[j]);
-    }
+    appendToParent(elements, container);
   }
 
-  return container;
+  return [container];
 };
 
 export default Accordion;

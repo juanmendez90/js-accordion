@@ -1,0 +1,13 @@
+@import 'theme';
+@import 'utilities/index';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: $fontFamily;
+  background: $grey;
+}
+
+.Wrapper {
+   height: 100%;
+}

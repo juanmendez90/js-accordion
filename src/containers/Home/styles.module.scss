@@ -1,0 +1,8 @@
+.Home {
+    // padding: 10px 20px;
+    min-height: calc(100% - 64px); //header - padding
+    margin-bottom: -64px; //footer
+  &-content {
+    padding: 10px 20px;
+  }
+}

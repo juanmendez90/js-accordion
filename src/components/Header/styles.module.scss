@@ -1,0 +1,13 @@
+@import "../../styles/theme";
+
+.Header {
+  display: flex;
+  height: $headerHeight;
+  padding: $headerPaddingVertical $headerPaddingHorizontal;
+  background-color: $blue;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    color: white;
+  }
+}

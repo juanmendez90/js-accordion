@@ -1,0 +1,14 @@
+@import "../../styles/theme";
+
+.Footer {
+  display: flex;
+  height: $footerHeight;
+  padding: $footerPaddingVertical $footerPaddingHorizontal;
+  background-color: $blue;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc($footerHeight + 2 * $footerPaddingVertical);
+  &-text {
+    color: white;
+  }
+}
