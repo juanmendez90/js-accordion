@@ -2,7 +2,7 @@ import Accordion from "../../components/Accordion";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { appendToParent, addStyles } from "../../utilities/helpers";
-import { accordionItems } from "../../constants";
+import { accordionItems, headerTitle, author } from "../../constants";
 import { getAccordionContent } from "../../api";
 import styles from "./styles.module.scss";
 
@@ -15,17 +15,12 @@ const Home = async () => {
   const ajaxItem = await getAjaxSection();
   const items = [...accordionItems, ajaxItem];
   const accordion = Accordion({ items });
-  const header = Header({ title: "VanilaJS Accordion" });
-  const footer = Footer({ text: "By Juan Mendez" });
+  const header = Header({ title: headerTitle });
+  const footer = Footer({ text: author });
 
   const section = document.createElement("section");
   addStyles(section, "add", styles["Home"]);
-
-  const content = document.createElement("div");
-  addStyles(content, "add", styles["Home-content"]);
-
-  appendToParent(accordion, content);
-  appendToParent([content], section);
+  appendToParent(accordion, section);
 
   return [...header, section, ...footer];
 };

@@ -3,6 +3,7 @@
 @import "../../styles/utilities/cursor";
 @import "../../styles/utilities/margin";
 @import "../../styles/utilities/font";
+@import "../../styles/utilities/height";
 
 .AccordionItem-title {
   @extend .u-padding1;
@@ -19,8 +20,8 @@
   @extend .u-margin0;
   @extend .u-paddingLeft1;
   @extend .u-paddingRight1;
+  @extend .u-height0;
   overflow: hidden;
   background-color: $darkGrey;
-  height: 0;
-  transition: all 0.3s ease;
+  transition: height 0.3s ease;
 }
