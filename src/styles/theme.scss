@@ -1,16 +1,24 @@
 // colors
 $blue: #007bff;
+$black: #000000;
+$darkGrey: #dddddd;
+$darkPurple: #5f00a1;
 $grey: #eeeeee;
+$purple: #6f42c1;
+$white: #ffffff;
 
 //fonts styles
+$fontSize: 14px;
 $fontFamily: 'Roboto', sans-serif;
 
 // header
 $headerHeight: 48px;
 $headerPaddingVertical: 8px;
 $headerPaddingHorizontal: 16px;
+$headerTotalHeight: $headerHeight + (2 * $headerPaddingVertical);
 
 // footer
 $footerHeight: 48px;
 $footerPaddingVertical: 8px;
 $footerPaddingHorizontal: 16px;
+$footerTotalHeight: $footerHeight + (2 * $footerPaddingVertical);

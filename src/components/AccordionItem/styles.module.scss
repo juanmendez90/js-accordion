@@ -1,19 +1,27 @@
+@import "../../styles/theme";
+@import "../../styles/utilities/padding";
+@import "../../styles/utilities/cursor";
+@import "../../styles/utilities/margin";
+
 .AccordionItem-title {
+  @extend .u-padding1;
+  @extend .u-cursorPointer;
   font-weight: bold;
-  cursor: pointer;
-  padding: 1em;
-  background-color: #eee;
+  background-color: $purple;
+  color: $white;
   &:hover, &--active {
-    background-color: #d9d9d9;
+    background-color: $darkPurple;
   }
 }
 
 .AccordionItem-content {
+  @extend .u-margin0;
+  @extend .u-paddingLeft1;
+  @extend .u-paddingRight1;
   overflow: hidden;
-  background-color: green;
+  background-color: $darkGrey;
   height: 0;
-  transition: height 0.3s ease;
+  transition: all 0.3s ease;
   &-active {
-    background: blue;
   }
 }

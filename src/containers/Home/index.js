@@ -2,20 +2,18 @@ import Accordion from "../../components/Accordion";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { appendToParent, addStyles } from "../../utilities/helpers";
+import { accordionItems } from "../../constants";
+import { getAccordionContent } from "../../api";
 import styles from "./styles.module.scss";
 
-const items = [
-  {
-    title: "Test",
-    content: "Bacon"
-  },
-  {
-    title: "Bacon",
-    content: "test <br /><br /> <br /> <br />  test"
-  }
-];
+const getAjaxSection = async () => {
+  const content = await getAccordionContent();
+  return { title: "Section Ajax", content };
+};
 
-const Home = () => {
+const Home = async () => {
+  const ajaxItem = await getAjaxSection();
+  const items = [...accordionItems, ajaxItem];
   const accordion = Accordion({ items });
   const header = Header({ title: "VanilaJS Accordion" });
   const footer = Footer({ text: "By Juan Mendez" });

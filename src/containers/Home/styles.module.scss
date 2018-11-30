@@ -1,8 +1,8 @@
+@import "../../styles/theme";
 .Home {
-    // padding: 10px 20px;
-    min-height: calc(100% - 64px); //header - padding
-    margin-bottom: -64px; //footer
+    min-height: calc(100vh - #{$headerTotalHeight} - #{$footerTotalHeight}); //header - padding
   &-content {
     padding: 10px 20px;
+    padding-bottom: $footerTotalHeight;
   }
 }

@@ -1,7 +1,10 @@
+@import "../../styles/utilities/display";
+@import "../../styles/utilities/padding";
+
 .Accordion {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid blue;
+  @extend .u-displayFlex;
+  @extend .u-flexDirectionColumn;
+  @extend .u-paddingTop3;
   flex: 1;
   margin: 0;
   overflow: hidden;

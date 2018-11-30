@@ -1,11 +1,10 @@
 import Home from "./containers/Home";
-import { appendToParent, addStyles } from "./utilities/helpers";
+import { appendToParent } from "./utilities/helpers";
 import "normalize.css";
 import "./styles/index.scss";
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const root = document.getElementById("root");
-  addStyles(root, "add", "Wrapper");
-  const homeElements = Home();
+  const homeElements = await Home();
   appendToParent(homeElements, root);
 });

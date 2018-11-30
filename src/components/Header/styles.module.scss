@@ -1,13 +1,14 @@
 @import "../../styles/theme";
+@import "../../styles/utilities/display";
 
 .Header {
-  display: flex;
+  @extend .u-displayFlex;
+  @extend .u-alignItemsCenter;
+  @extend .u-justifyContentCenter;
   height: $headerHeight;
   padding: $headerPaddingVertical $headerPaddingHorizontal;
   background-color: $blue;
-  justify-content: center;
-  align-items: center;
   &-title {
-    color: white;
+    color: $white;
   }
 }

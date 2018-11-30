@@ -1,13 +1,13 @@
 @import "../../styles/theme";
+@import "../../styles/utilities/display";
 
 .Footer {
-  display: flex;
+  @extend .u-displayFlex;
+  @extend .u-alignItemsCenter;
+  @extend .u-justifyContentCenter;
   height: $footerHeight;
   padding: $footerPaddingVertical $footerPaddingHorizontal;
   background-color: $blue;
-  justify-content: center;
-  align-items: center;
-  margin-top: calc($footerHeight + 2 * $footerPaddingVertical);
   &-text {
     color: white;
   }

@@ -2,12 +2,14 @@
 @import 'utilities/index';
 
 html, body {
-  height: 100%;
-  margin: 0;
+  @extend .u-margin0;
   font-family: $fontFamily;
   background: $grey;
+  font-size: $fontSize;
+    height: 100%;
 }
 
-.Wrapper {
-   height: 100%;
+body {
+  display: flex;
+  flex-direction: column;
 }
