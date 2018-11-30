@@ -2,14 +2,18 @@
   font-weight: bold;
   cursor: pointer;
   padding: 1em;
-  text-transform: uppercase;
   background-color: #eee;
   &:hover, &--active {
     background-color: #d9d9d9;
   }
 }
 
-.AccordionItem-title2 {
+.AccordionItem-content {
+  overflow: hidden;
   background-color: green;
-
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  &-active {
+    max-height: 500px;
+  }
 }

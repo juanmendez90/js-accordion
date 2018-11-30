@@ -1,3 +1,3 @@
-export const addStyles = (htmlNode, ...params) => {
-  htmlNode.classList.add(...params);
-}
+export const addStyles = (htmlNode, method, ...params) => {
+  htmlNode.classList[method](...params);
+};
