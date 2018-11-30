@@ -2,14 +2,15 @@
 @import "../../styles/utilities/padding";
 @import "../../styles/utilities/cursor";
 @import "../../styles/utilities/margin";
+@import "../../styles/utilities/font";
 
 .AccordionItem-title {
   @extend .u-padding1;
   @extend .u-cursorPointer;
-  font-weight: bold;
+  @extend .u-fontWeightBold;
   background-color: $purple;
   color: $white;
-  &:hover, &--active {
+  &:hover {
     background-color: $darkPurple;
   }
 }

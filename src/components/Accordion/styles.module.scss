@@ -1,11 +1,11 @@
 @import "../../styles/utilities/display";
 @import "../../styles/utilities/padding";
+@import "../../styles/utilities/margin";
 
 .Accordion {
   @extend .u-displayFlex;
   @extend .u-flexDirectionColumn;
   @extend .u-paddingTop3;
-  flex: 1;
-  margin: 0;
+  @extend .u-margin0;
   overflow: hidden;
 }
