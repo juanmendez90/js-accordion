@@ -6,14 +6,16 @@ This is Javascript solution for creating an Accordion Menu on your web page.
 
 ### Accordion
 
-| prop | type | description |
-| items | arrayOf(AccordionItem) | accordionItem = { title: string, content: string }|
+| prop  | type                   | description                                        |
+| ----- | ---------------------- | -------------------------------------------------- |
+| items | arrayOf(AccordionItem) | accordionItem = { title: string, content: string } |
 
 ### Accordion Item
 
-| prop | type | description |
-| title | string | title of the section |
-| content | string | collapsable content |
+| prop    | type   | description          |
+| ------- | ------ | -------------------- |
+| title   | string | title of the section |
+| content | string | collapsable content  |
 
 ## Requirements for building the solution
 
