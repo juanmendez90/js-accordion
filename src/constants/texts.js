@@ -1,2 +1,2 @@
-export const headerTitle = "VanilaJS Accordion";
-export const author = "VanilaJS Accordion";
+export const headerTitle = "VanillaJS Accordion";
+export const author = "By Juan Mendez";
