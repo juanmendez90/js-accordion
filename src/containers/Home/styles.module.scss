@@ -1,4 +1,8 @@
 @import "../../styles/theme";
+@import "../../styles/utilities/padding";
+
 .Home {
+  @extend .u-paddingLeft3;
+  @extend .u-paddingRigth3;
   min-height: calc(100vh - #{$headerTotalHeight} - #{$footerTotalHeight});
 }
