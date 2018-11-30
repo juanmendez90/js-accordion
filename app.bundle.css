@@ -13,6 +13,12 @@
 .src-components-AccordionItem-___styles-module__u-paddingBottom3___1GUX7 {
   padding-bottom: 3em; }
 
+.src-components-AccordionItem-___styles-module__u-paddingLeft3___2qkE5 {
+  padding-left: 3em; }
+
+.src-components-AccordionItem-___styles-module__u-paddingRigth3___HcCMu {
+  padding-right: 3em; }
+
 .src-components-AccordionItem-___styles-module__u-cursorPointer___3Ga6O, .src-components-AccordionItem-___styles-module__AccordionItem-title___2O-Ln {
   cursor: pointer; }
 
@@ -66,6 +72,12 @@
 .src-components-Accordion-___styles-module__u-paddingBottom3___WVuds, .src-components-Accordion-___styles-module__Accordion___1PwZM {
   padding-bottom: 3em; }
 
+.src-components-Accordion-___styles-module__u-paddingLeft3___3ojOP {
+  padding-left: 3em; }
+
+.src-components-Accordion-___styles-module__u-paddingRigth3___39zEx {
+  padding-right: 3em; }
+
 .src-components-Accordion-___styles-module__u-margin0___1Vgk-, .src-components-Accordion-___styles-module__Accordion___1PwZM {
   margin: 0; }
 
@@ -109,6 +121,27 @@
   background-color: #007bff; }
   .src-components-Footer-___styles-module__Footer-text___31LLU {
     color: #ffffff; }
+
+.src-containers-Home-___styles-module__u-padding1___2a7IA {
+  padding: 1em; }
+
+.src-containers-Home-___styles-module__u-paddingLeft1___3IHkJ {
+  padding-left: 1em; }
+
+.src-containers-Home-___styles-module__u-paddingRight1___3uy9M {
+  padding-left: 1em; }
+
+.src-containers-Home-___styles-module__u-paddingTop3___131PE {
+  padding-top: 3em; }
+
+.src-containers-Home-___styles-module__u-paddingBottom3___2fcM8 {
+  padding-bottom: 3em; }
+
+.src-containers-Home-___styles-module__u-paddingLeft3___34rOE, .src-containers-Home-___styles-module__Home___2F1Ps {
+  padding-left: 3em; }
+
+.src-containers-Home-___styles-module__u-paddingRigth3___RiKE2, .src-containers-Home-___styles-module__Home___2F1Ps {
+  padding-right: 3em; }
 
 .src-containers-Home-___styles-module__Home___2F1Ps {
   min-height: calc(100vh - 64px - 64px); }
@@ -166,6 +199,12 @@
 
 .u-paddingBottom3 {
   padding-bottom: 3em; }
+
+.u-paddingLeft3 {
+  padding-left: 3em; }
+
+.u-paddingRigth3 {
+  padding-right: 3em; }
 
 html, body {
   font-family: "Roboto", sans-serif;
