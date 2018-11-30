@@ -22,7 +22,7 @@
 .src-components-AccordionItem-___styles-module__AccordionItem-title___2O-Ln {
   background-color: #6f42c1;
   color: #ffffff; }
-  .src-components-AccordionItem-___styles-module__AccordionItem-title___2O-Ln:hover {
+  .src-components-AccordionItem-___styles-module__AccordionItem-title___2O-Ln:hover, .src-components-AccordionItem-___styles-module__AccordionItem-title-active___3YMwh {
     background-color: #5f00a1; }
 
 .src-components-AccordionItem-___styles-module__AccordionItem-content___hHzEC {
@@ -156,8 +156,7 @@
 html, body {
   font-family: "Roboto", sans-serif;
   background: #eeeeee;
-  font-size: 14px;
-  height: 100%; }
+  font-size: 14px; }
 
 body {
   display: flex;
