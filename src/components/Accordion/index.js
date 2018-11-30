@@ -15,7 +15,6 @@ const Accordion = ({ items }) => {
     }
   }
 
-  asdasda;
   return container;
 };
 
