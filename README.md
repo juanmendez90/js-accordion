@@ -1,6 +1,7 @@
 # js-accordion (VanillaJS Accordion)
 
 This is Javascript solution for creating an Accordion Menu on your web page.
+[Live demo](https://juanmendez90.github.io/js-accordion/)
 
 ## Components
 
