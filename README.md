@@ -2,7 +2,7 @@
 
 This is Javascript solution for creating an Accordion Menu on your web page.
 
-## Usage
+## Components
 
 ### Accordion
 
