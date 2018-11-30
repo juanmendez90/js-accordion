@@ -10,10 +10,7 @@
   @extend .u-fontWeightBold;
   background-color: $purple;
   color: $white;
-  &:hover {
-    background-color: $darkPurple;
-  }
-  &-active {
+  &:hover, &-active{
     background-color: $darkPurple;
   }
 }

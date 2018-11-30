@@ -2,10 +2,11 @@ import { addStyles } from "../../utilities/helpers";
 import styles from "./styles.module.scss";
 
 const handleClick = event => {
-  const content = event.target.nextElementSibling;
+  const container = event.target;
+  const content = container.nextElementSibling;
   content.setAttribute("style", "height: 0");
-  addStyles(content, "toggle", styles["AccordionItem-content-active"]);
-  if (content.classList.contains(styles["AccordionItem-content-active"])) {
+  addStyles(container, "toggle", styles["AccordionItem-title-active"]);
+  if (container.classList.contains(styles["AccordionItem-title-active"])) {
     content.setAttribute("style", `height: ${content.scrollHeight}px`);
   }
 };
