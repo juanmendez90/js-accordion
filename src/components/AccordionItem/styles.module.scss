@@ -13,6 +13,9 @@
   &:hover {
     background-color: $darkPurple;
   }
+  &-active {
+    background-color: $darkPurple;
+  }
 }
 
 .AccordionItem-content {
@@ -23,6 +26,4 @@
   background-color: $darkGrey;
   height: 0;
   transition: all 0.3s ease;
-  &-active {
-  }
 }
