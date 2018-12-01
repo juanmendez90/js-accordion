@@ -1,5 +1,7 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
+const webpack = require("webpack");
+const dotenv = require("dotenv");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -8,12 +10,18 @@ const publicFilesPath = path.resolve(__dirname, "public");
 
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
+const env = dotenv.config().parsed;
+const envKeys = Object.keys(env).reduce((prev, next) => {
+  prev[`process.env.${next}`] = JSON.stringify(env[next]);
+  return prev;
+}, {});
 
 module.exports = {
   entry: {
     app: "./src/index.js"
   },
   plugins: [
+    new webpack.DefinePlugin(envKeys),
     new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
       template: path.resolve(publicFilesPath, "index.html")
