@@ -2,13 +2,19 @@ import Accordion from "../../components/Accordion";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { appendToParent, addStyles } from "../../utilities/helpers";
-import { accordionItems, headerTitle, author } from "../../constants";
+import {
+  accordionItems,
+  headerTitle,
+  author,
+  ajaxSection,
+  stylesMethods
+} from "../../constants";
 import { getAccordionContent } from "../../api";
 import styles from "./styles.module.scss";
 
 const getAjaxSection = async () => {
   const content = await getAccordionContent();
-  return { title: "Section Ajax", content };
+  return { title: ajaxSection, content };
 };
 
 const Home = async () => {
@@ -19,7 +25,7 @@ const Home = async () => {
   const footer = Footer({ text: author });
 
   const section = document.createElement("section");
-  addStyles(section, "add", styles["Home"]);
+  addStyles(section, stylesMethods.add, styles["Home"]);
   appendToParent(accordion, section);
 
   return [...header, section, ...footer];
